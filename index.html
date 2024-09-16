@@ -1,0 +1,1683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mofi | Default Dashboard</title>
+    <link rel="icon" href="./assets/images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/fonts.css">
+    <link rel="stylesheet" href="./assets/css/jquery-ui.css">
+    <link rel="stylesheet" href="./assets/css/media.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <!-- link:https://admin.pixelstrap.net/mofi/template/index.html  -->
+</head>
+<body class="loading">
+    <div class="loader-wrapper d-flex align-item-center ">
+        <div class="loader loader-1">
+            <div class="loader-outter"></div>
+            <div class="loader-inner"></div>
+            <div class="loader-inner-1"></div>
+        </div>
+    </div>
+    <div class="page-wrapper d-flex">
+        <div class="page-header d-flex align-item-center justify-content-betwn">
+            <div class="page-title d-flex align-item-center"> 
+                <div class=" toggle-left">
+                    <a href="javascript:void(0)">
+                        <i data-feather="grid"></i>
+                    </a>
+
+                </div>
+                <div>
+                    <h4>Default Dashboard</h4>
+                    <nav>
+                        <ol class="d-flex align-item-center">
+                            <li>
+
+                                <a href="./index.html" class="dash-home">
+                                    <i data-feather="home"></i>
+                                </a>
+                            </li>
+                            <li>
+                                / Dashboard
+                            </li>
+                            <li>
+                                / Default
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="header-wrapper">
+                <div class="nav-right">
+                    <ul class="d-flex align-item-center">
+                        <li>
+                            <form action="" method="">
+                                <i class="srch-btn" data-feather="search"></i>
+                                <input type="text" class="form-control" placeholder="Search mofi...">
+                            </form>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <i data-feather="maximize" onclick="toggleFullScreen(document.body)"></i>
+                            </a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="">
+                                <i data-feather="bell"></i>
+                            </a>
+                            <div class="dropdown-menu">
+                                <h4>Notifications</h4>
+                                <ul class="d-flex flex-direction-col">
+                                    <li>
+                                        <a href="javascript:void(0)">
+                                            <div class="noti-item ">
+                                                <div class="noti-img">
+                                                    <img src="./assets/images/wallet.png" alt="">
+                                                </div>
+                                                <div class="noti-detials">
+                                                    <span>DAILY OFFER ADDED</span>
+                                                    <p>User-only offer added</p>
+                                                </div>
+                                                <i data-feather="x"></i>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="javascript:void(0)">
+                                            <div class="noti-item">
+                                                <div class="noti-img">
+                                                    <img src="./assets/images/shield-dne.png" alt="">
+                                                </div>
+                                                <div class="noti-detials">
+                                                    <span>PRODUCT REVIEW</span>
+                                                    <p>Changed to a workflow</p>
+                                                </div>
+                                                <i data-feather="x"></i>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="javascript:void(0)">
+                                            <div class="noti-item">
+                                                <div class="noti-img">
+                                                    <img src="./assets/images/graph.png" alt="">
+                                                </div>
+                                                <div class="noti-detials">
+                                                    <span>RETURN PRODUCTS</span>
+                                                    <p>52 items were returned</p>
+                                                </div>
+                                                <i data-feather="x"></i>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="javascript:void(0)">
+                                            <div class="noti-item">
+                                                <div class="noti-img">
+                                                    <img src="./assets/images/ticket-star.png" alt="">
+                                                </div>
+                                                <div class="noti-detials">
+                                                    <span>RECENTLY PAID </span>
+                                                    <p>Card payment of $343</p>
+                                                </div>
+                                                <i data-feather="x"></i>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <a href="">
+                                <i data-feather="bookmark"></i>
+                            </a>
+                            <div class="dropdown-menu book-flip">
+                                <div class="flip-card bgcard">
+                                    <div class="flip-card-inner text-center flipped container">
+                                        <div class="front card">
+                                            <h4>Bookmark</h4>
+                                            <ul>
+                                                <li>
+                                                    <div class="row">
+                                                        <div class="col-4">
+                                                            <div class="book-item">
+                                                                <div class="book-icon d-flex align-item-center">
+                                                                    <i data-feather="file-text"></i>
+                                                                </div>
+                                                                <span>Forms</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <div class="book-item">
+                                                                <div class="book-icon d-flex align-item-center ">
+                                                                    <i style="color:#48A3D7" data-feather="user"></i>
+                                                                </div>
+                                                                <span style="color:#48A3D7">Profile</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <div class="book-item">
+                                                                <div class="book-icon d-flex align-item-center ">
+                                                                    <i style="color:#D77748" data-feather="server"></i>
+                                                                </div>
+                                                                <span style="color:#D77748">Tables</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <a class="book-btn flip-btn" href="javascript:void(0)">
+                                                        Add Bookmark
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!-- <div class="back ">
+                                    <ul>
+                                        <li>
+                                            <input type="text" placeholder="search...">
+                                        </li>
+                                        <li>
+                                            <a class="book-btn flip-btn"  href="javascript:void(0)">
+                                                back
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i data-feather="moon"></i>
+                            </a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="">
+                                <i data-feather="mail"></i>
+                            </a>
+                            <div class="dropdown-menu">
+                                <h4>Messages</h4>
+                                <ul>
+                                    <li style="background-color: rgba(122, 112, 186, 0.1) ;">
+                                        <a href="javascript:void(0)">
+                                            <div class="noti-item message-item">
+                                                <div class="message-img">
+                                                    <img src="./assets/images/1.png" alt="">
+                                                </div>
+                                                <div class="noti-detials message-details">
+                                                    <span style="color: #7A70BA ;">Hackett Yessenia</span>
+                                                    <p>Hello Miss...😊</p>
+                                                </div>
+                                                <span>2 hrs</span>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li style="background-color: rgba(72, 163, 215, 0.1) !important;">
+                                        <a href="javascript:void(0)">
+                                            <div class="noti-item  message-item">
+                                                <div class="message-img">
+                                                    <img src="./assets/images/2.png" alt="">
+                                                </div>
+                                                <div class="noti-detials message-details">
+                                                    <span style="color: #48A3D7 ;">schneider Adan</span>
+                                                    <p>Happy Birthday 🎊</p>
+                                                </div>
+                                                <span>3 hrs</span>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li style="background-color: rgba(13, 167, 89, 0.1) !important;">
+                                        <a href="javascript:void(0)">
+                                            <div class="noti-item message-item">
+                                                <div class="message-img">
+                                                    <img src="./assets/images/3.png" alt="">
+                                                </div>
+                                                <div class="noti-detials message-details">
+                                                    <span style="color: #0DA759;">Mahdi Gholizadeh</span>
+                                                    <p>Theme Is beautiful</p>
+                                                </div>
+                                                <span>5 hrs</span>
+                                            </div>
+                                        </a>
+                                    </li>
+
+
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i data-feather="shopping-bag"></i>
+                            </a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="">
+                                <img class="user" src="./assets/images/profile.png" alt="">
+                            </a>
+                            <div class="dropdown-menu user-dropdown">
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            <i data-feather="user"></i>
+                                            <span>ACCOUNT</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i data-feather="mail"></i>
+                                            <span>INBOX</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i data-feather="file-text"></i>
+                                            <span>TASKBOARD</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i data-feather="settings"></i>
+                                            <span>SETTINGS</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./login.html">
+                                            <i class="log-out" data-feather="log-out"></i>
+                                            <span>LOG0UT</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <span>Julia Smith</span>
+                            <p>Administrator
+                                <i data-feather="chevron-down"></i>
+                            </p>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div  id="top" class="page-body-wrapper">
+            <div class="sidebar ">
+                <div class="logo-wrapper">
+                    <a href="./index.html">
+                        <img class="sidebar-logo-main" src="./assets/images/logo_light.png" alt="">
+                        <img class="sidebar-logo" src="./assets/images/sidebar-logo.png" alt="">
+                    </a>
+
+                    <div class="toggle-sidebar">
+                        <i data-feather="chevron-left"></i>
+                    </div>
+                </div>
+                <div class="sidebar-content">
+                    <ul class="d-flex flex-direction-col">
+                        <li>
+                            <a class="sidebar-title" href="javascript:void(0)">
+                                <h4>PINNED</h4>
+                            </a>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a class="dashboard" href="javascript:void(0)">
+                                <i data-feather="home"></i>
+                                <span>Dashboard</span>
+                                <i data-feather="chevron-right"></i>
+                            </a>
+                            <div class="sidebar-dropdown-menu">
+                                <ul>
+                                    <li>
+                                        <a href="javascript:void(0)">Default</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Project</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Ecommerce</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Education</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="title-margin">
+                            <a class="sidebar-title" href="javascript:void(0)">
+                                <h4>GENERAL</h4>
+                            </a>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="javascript:void(0)">
+                                <i data-feather="pie-chart"></i>
+                                <span>Widgets</span>
+                                <i data-feather="chevron-right"></i>
+                            </a>
+                            <div class="sidebar-dropdown-menu">
+                                <ul>
+                                    <li>
+                                        <a href="javascript:void(0)">General</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Chart</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="javascript:void(0)">
+                                <i data-feather="layout"></i>
+                                <span>Page Layout</span>
+                                <i data-feather="chevron-right"></i>
+                            </a>
+                            <div class="sidebar-dropdown-menu">
+                                <ul>
+                                    <li>
+                                        <a href="javascript:void(0)">Boxed</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">RTL</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Dark Layout</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Hide Nav Scroll</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Footer Light</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Footer Dark/a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Footer fixed</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="title-margin">
+                            <a class="sidebar-title" href="">
+                                <h4>APPLICATIONS</h4>
+                            </a>
+                        </li>
+                        <li class="sidebar-dropdown">
+                            <a href="javascript:void(0)">
+                                <i data-feather="alert-circle"></i>
+                                <span>Projects</span>
+                                <i data-feather="chevron-right"></i>
+                            </a>
+                            <div class="sidebar-dropdown-menu">
+                                <ul>
+                                    <li>
+                                        <a href="javascript:void(0)">Project List</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Create New</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="javascript:void(0)">
+                                <i data-feather="file-text"></i>
+                                <span>File Manager</span>
+
+                            </a></li>
+                        <li><a href="javascript:void(0)">
+                                <i data-feather="credit-card"></i>
+                                <span>Kanban Board</span>
+
+                            </a></li>
+                        <li class="sidebar-dropdown">
+                            <a href="javascript:void(0)">
+                                <i data-feather="shopping-bag"></i>
+                                <span>Ecommerce</span>
+                                <i data-feather="chevron-right"></i>
+                            </a>
+                            <div class="sidebar-dropdown-menu">
+                                <ul>
+                                    <li>
+                                        <a href="javascript:void(0)">Add Products</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Products</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Category Page</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Product Page</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Product List</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Payment Details</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Order History</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Invoices</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">cart</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Wishlist</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Checkout</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Pricing</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="javascript:void(0)">
+                                <i data-feather="mail"></i>
+                                <span>Letter Box</span>
+
+                            </a></li>
+                        <li class="sidebar-dropdown"><a href="javascript:void(0)">
+                                <i data-feather="message-circle"></i>
+                                <span>Chat</span>
+                                <i data-feather="chevron-right"></i>
+                            </a>
+                            <div class="sidebar-dropdown-menu">
+                                <ul>
+                                    <li>
+                                        <a href="javascript:void(0)">Private Chat</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Group Chat</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown"><a href="javascript:void(0)">
+                                <i data-feather="users"></i>
+                                <span>Users</span>
+                                <i data-feather="chevron-right"></i>
+                            </a>
+                            <div class="sidebar-dropdown-menu">
+                                <ul>
+                                    <li>
+                                        <a href="javascript:void(0)">User Profile</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">User Edit</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">User Cards</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="javascript:void(0)">
+                                <i data-feather="bookmark"></i>
+                                <span>Bookmarks</span>
+
+                            </a></li>
+                        <li><a href="javascript:void(0)">
+                                <i data-feather="phone"></i>
+                                <span>Contacts</span>
+
+                            </a></li>
+                        <li><a href="javascript:void(0)">
+                                <i data-feather="check-square"></i>
+                                <span>Tasks</span>
+
+                            </a></li>
+                        <li><a href="javascript:void(0)">
+                                <i data-feather="calendar"></i>
+                                <span>Calendar</span>
+
+                            </a></li>
+                        <li><a href="javascript:void(0)">
+                                <i data-feather="camera"></i>
+                                <span>Social App</span>
+
+                            </a></li>
+                        <li><a href="javascript:void(0)">
+                                <i data-feather="edit"></i>
+                                <span>To-Do</span>
+
+                            </a></li>
+                        <li><a href="javascript:void(0)">
+                                <i data-feather="search"></i>
+                                <span>Search Result</span>
+
+                            </a></li>
+                        <li class="title-margin">
+                            <a class="sidebar-title" href="javascript:void(0)">
+                                <h4> FORMS & TABLE</h4>
+                            </a>
+                        </li>
+                        <li class="sidebar-dropdown"><a href="javascript:void(0)">
+                                <i data-feather="plus-square"></i>
+                                <span>Forms</span>
+                                <i data-feather="chevron-right"></i>
+                            </a>
+                            <div class="sidebar-dropdown-menu">
+                                <ul>
+                                    <li>
+                                        <a href="javascript:void(0)">Form Controls</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Form Widgets</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Form Layout</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown"><a href="javascript:void(0)">
+                                <i data-feather="edit-3"></i>
+                                <span>Tables</span>
+                                <i data-feather="chevron-right"></i>
+                            </a>
+                            <div class="sidebar-dropdown-menu">
+                                <ul>
+                                    <li>
+                                        <a href="javascript:void(0)">Bootstarp Tables</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Data Tables</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Ex. Data Tables</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Js Grid Table</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="title-margin">
+                            <a class="sidebar-title" href="javascript:void(0)">
+                                <h4> COMPONENTS</h4>
+                            </a>
+                        </li>
+                        <li class="sidebar-dropdown"><a href="javascript:void(0)">
+                                <i data-feather="folder-minus"></i>
+                                <span>Ui Kits</span>
+                                <i data-feather="chevron-right"></i>
+                            </a>
+                            <div class="sidebar-dropdown-menu">
+                                <ul>
+                                    <li>
+                                        <a href="javascript:void(0)">Typography</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Avatars</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Divider </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Helper Classes</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Grid</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Tag & Pills</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Progress </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Modal</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Alert</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Popover</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Placeholders</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Tooltip</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown"><a href="javascript:void(0)">
+                                <i data-feather="server"></i>
+                                <span>Bonus Ui</span>
+                                <i data-feather="chevron-right"></i>
+                            </a>
+                            <div class="sidebar-dropdown-menu">
+                                <ul>
+                                    <li>
+                                        <a href="javascript:void(0)">Scrollable</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Tree View</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">toats</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Rating</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Dropzone</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">scrollspy</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Tour</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Sweetalert2</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Animated Modal</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Ratio</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Owl Carousel</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Ribbons</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown"><a href="javascript:void(0)">
+                                <i data-feather="grid"></i>
+                                <span>Animation</span>
+                                <i data-feather="chevron-right"></i>
+                            </a>
+                            <div class="sidebar-dropdown-menu">
+                                <ul>
+                                    <li>
+                                        <a href="javascript:void(0)">Animate</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Scroll Reveal</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">AOS Animation</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Tilt animation</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Wow Animation</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Flash Icons</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown"><a href="javascipt:void(0)">
+                                <i data-feather="trending-up"></i>
+                                <span>Icons</span>
+                                <i data-feather="chevron-right"></i>
+                            </a>
+                            <div class="sidebar-dropdown-menu">
+                                <ul>
+                                    <li>
+                                        <a href="javascript:void(0)">Flag Icon</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Fontawesome Icon</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Ico Icon</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Themify Icon</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Feather Icon</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="javascipt:void(0)">
+                                <i data-feather="stop-circle"></i>
+                                <span>Buttons</span>
+
+                            </a></li>
+                        <li class="sidebar-dropdown">
+                            <a href="javascipt:void(0)">
+                                <i data-feather="bar-chart-2"></i>
+                                <span>Charts</span>
+                                <i data-feather="chevron-right"></i>
+                            </a>
+                            <div class="sidebar-dropdown-menu">
+                                <ul>
+                                    <li>
+                                        <a href="javascript:void(0)">Echarts</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Apex Charts</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Google Chart</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Sparkline chart</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Flot chart</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Knob chart</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Morris chart</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Chartjs Chart</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Chartist Chart</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Peity Chart</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a class="sidebar-title" href="javascipt:void(0)">
+                                <h4>PAGES</h4>
+                            </a></li>
+                        <li><a href="javascipt:void(0)">
+                                <i data-feather="credit-card"></i>
+                                <span>Landing Page</span>
+
+                            </a></li>
+                        <li><a href="javascipt:void(0)">
+                                <i data-feather="file-plus"></i>
+                                <span>Sample Page</span>
+
+                            </a></li>
+                        <li><a href="javascipt:void(0)">
+                                <i data-feather="play-circle"></i>
+                                <span>Internationalization</span>
+
+                            </a></li>
+                        <li><a href="javascipt:void(0)">
+                                <i data-feather="tag"></i>
+                                <span>Starter Kit</span>
+                            </a></li>
+                        <li class="sidebar-dropdown"><a href="javascipt:void(0)">
+                                <i data-feather="key"></i>
+                                <span>Others</span>
+                                <i data-feather="chevron-right"></i>
+                            </a>
+                            <div class="sidebar-dropdown-menu">
+                                <ul>
+                                    <li>
+                                        <a href="javascript:void(0)">Error Page</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Authentication</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Coming soon</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Email templates</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a class="sidebar-title" href="">
+                                <h4>MISCELLANEOUS</h4>
+                            </a></li>
+                        <li class="sidebar-dropdown"><a href="javascript:void(0)">
+                                <i data-feather="image"></i>
+                                <span>Gallery</span>
+                                <i data-feather="chevron-right"></i>
+                            </a>
+                            <div class="sidebar-dropdown-menu">
+                                <ul>
+                                    <li>
+                                        <a href="javascript:void(0)">Gallery Grid</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Gallery Grid Desc</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Masonry Gallery</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Masonry With Desc</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Hover Effects</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown"><a href="javascript:void(0)">
+                                <i data-feather="inbox"></i>
+                                <span>Blog</span>
+                                <i data-feather="chevron-right"></i>
+                            </a>
+                            <div class="sidebar-dropdown-menu">
+                                <ul>
+                                    <li>
+                                        <a href="javascript:void(0)">Blog Details</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Blog Single</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Add Post</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="">
+                                <i data-feather="alert-triangle"></i>
+                                <span>FAQ</span>
+                            </a></li>
+                        <li class="sidebar-dropdown"><a href="javascript:void(0)">
+                                <i data-feather="filter"></i>
+                                <span>Job Search</span>
+                                <i data-feather="chevron-right"></i>
+                            </a>
+                            <div class="sidebar-dropdown-menu">
+                                <ul>
+                                    <li>
+                                        <a href="javascript:void(0)">Cards View</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">List View</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Job Details</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Apply</a>
+                                    </li>
+                                    <li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown"><a href="javacsript:void(0)">
+                                <i data-feather="briefcase"></i>
+                                <span>Courses</span>
+                                <i data-feather="chevron-right"></i>
+                            </a>
+                            <div class="sidebar-dropdown-menu">
+                                <ul>
+                                    <li>
+                                        <a href="javascript:void(0)">Course List</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Course Details</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown"><a href="javascript:void(0)">
+                                <i data-feather="compass"></i>
+                                <span>Maps</span>
+                                <i data-feather="chevron-right"></i>
+                            </a>
+                            <div class="sidebar-dropdown-menu">
+                                <ul>
+                                    <li>
+                                        <a href="javascript:void(0)">Maps JS</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Vector Maps</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="sidebar-dropdown"><a href="javascript:void(0)">
+                                <i data-feather="shield"></i>
+                                <span>Editors</span>
+                                <i data-feather="chevron-right"></i>
+                            </a>
+                            <div class="sidebar-dropdown-menu">
+                                <ul>
+                                    <li>
+                                        <a href="javascript:void(0)">Quill Editor</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">Summer Note</a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">CK Editor </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">MDE Editor </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)">ACE Code Editor</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="javascript:void(0)">
+                                <i data-feather="settings"></i>
+                                <span>Knowledgebase</span>
+                            </a></li>
+                        <li><a href="javascipt:void(0)">
+                                <i data-feather="tag"></i>
+                                <span>Support Ticket</span>
+                            </a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="page-body">
+                <div class="row row-gap">
+                    <!-- welcome  -->
+                    <div class="col-5 col-xl-6 col-md-12 order-xl-1">
+                        <div class="card">
+                            <div class="welcome-banner">
+                                <div class="banner-img flex-direction-col d-flex">
+                                    <h1 class="text-center">Good Day, lena Miller</h1>
+                                    <p class="text-center">Welcome to the Mofi family! We are delighted that you have visited our dashboard.
+                                    </p>
+                                    <a class="banner-btn" href="./index.html">Go Premium</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- leaf  -->
+                    <div class="col-3 col-xl-6 col-md-12 order-xl-2">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="header-top">
+                                    <h4>Opening Of Leaflets</h4>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div id="leaflets"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- shift overview  -->
+                    <div class="col-4 col-xl-5 order-xl-3 col-md-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="header-top">
+                                    <h4>Shifts Overview</h4>
+                                    <div class="dropdown icon-dropdown">
+                                        <button class="dropdown-toggle">
+                                            <i data-feather="more-horizontal"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div  class="card-body">
+                                <div  id="piechart"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- customer-transaction  -->
+                    <div class="col-5 order-xl-6 col-xl-6 col-md-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="header-top">
+                                    <h4>Customer Transaction</h4>
+                                    <div class="dropdown icon-dropdown">
+                                        <button class="dropdown-toggle">
+                                            <i data-feather="more-horizontal"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div id="customer-transaction">
+                                    <div id="customer"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- projects  -->
+                    <div class="col-7 order-xl-5 col-xl-12 ">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="header-top">
+                                    <h4>Projects</h4>
+                                    <div class="dropdown icon-dropdown">
+                                        <button class="dropdown-toggle">
+                                            <i data-feather="more-horizontal"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div id="map"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- noti  -->
+                    <div class="col-6 order-xl-7 col-xl-6 col-md-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="header-top">
+                                    <h4>Notifications</h4>
+                                    <div class="dropdown icon-dropdown">
+                                        <button class="dropdown-toggle">
+                                            <i data-feather="more-horizontal"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <ul class="noti-box">
+                                    <li>
+                                        <div class="flex-shrink noti-img">
+                                            <img src="./assets/images/wallet.png" alt="">
+                                        </div>
+                                        <div class="flex-grow noti-item">
+                                            <a href="javascript:void(0)">
+                                                <h5>New daily offer added</h5>
+                                            </a>
+                                            <p>New user-only offer added</p>
+                                        </div>
+                                        <span>10 sep,2024</span>
+                                    </li>
+                                    <li>
+                                        <div class="flex-shrink noti-img">
+                                            <img src="./assets/images/shield-dne.png" alt="">
+                                        </div>
+                                        <div class="flex-grow noti-item">
+                                            <a href="javascript:void(0)">
+                                                <h5>Product Evaluation</h5>
+                                            </a>
+                                            <p>Changed to a new workflow</p>
+                                        </div>
+                                        <span>12 oct,2024</span>
+                                    </li>
+                                    <li>
+                                        <div class="flex-shrink noti-img">
+                                            <img src="./assets/images/graph.png" alt="">
+                                        </div>
+                                        <div class="flex-grow noti-item">
+                                            <a href="javascript:void(0)">
+                                                <h5>Return of a Product</h5>
+                                            </a>
+                                            <p>452 items were returned</p>
+                                        </div>
+                                        <span>15 mar,2024</span>
+                                    </li>
+                                    <li>
+                                        <div class="flex-shrink noti-img">
+                                            <img src="./assets/images/ticket-star.png" alt="">
+                                        </div>
+                                        <div class="flex-grow noti-item">
+                                            <a href="javascript:void(0)">
+                                                <h5>Recently Paid</h5>
+                                            </a>
+                                            <p>Mastercard payment of $343</p>
+                                        </div>
+                                        <span>20 june,2024</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- dates  -->
+                    <div class="col-6 order-xl-8 col-xl-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="header-top">
+                                    <h4>Upcoming Appointments</h4>
+                                    <div class="dropdown icon-dropdown">
+                                        <button class="dropdown-toggle">
+                                            <i data-feather="more-horizontal"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div id="datepicker"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- sales-stats  -->
+                    <div class="col-12 order-xl-9 col-md-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="header-top">
+                                    <h4>Sales Statistic</h4>
+                                    <div class="dropdown icon-dropdown">
+                                        <button class="dropdown-toggle">
+                                            <i data-feather="more-horizontal"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body sale-stats">
+                                <div class="row">
+                                    <div class="col-4 stats-icon">
+                                        <div class="balance-card">
+                                            <div class="icon-box">
+                                                <img src="./assets/images/customers.png" alt="">
+                                            </div>
+                                            <div>
+                                                <span>Customers</span>
+                                                <h5>1.736</h5>
+                                            </div>
+                                            <div class="text-end-2">
+                                                <button class="dropdown-toggle">
+                                                    <i data-feather="more-horizontal"></i>
+                                                </button>
+                                                <span>+3,7%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 stats-icon">
+                                        <div class="balance-card">
+                                            <div class="icon-box">
+                                                <img src="./assets/images/revenue.png" alt="">
+                                            </div>
+                                            <div>
+                                                <span>Revenue</span>
+                                                <h5>$9.247</h5>
+                                            </div>
+                                            <div class="text-end-2">
+                                                <button class="dropdown-toggle">
+                                                    <i data-feather="more-horizontal"></i>
+                                                </button>
+                                                <span style="color: #E44141 ;">-0,10%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 stats-icon">
+                                        <div class="balance-card">
+                                            <div class="icon-box">
+                                                <img src="./assets/images/profit.png" alt="">
+                                            </div>
+                                            <div>
+                                                <span>Profit</span>
+                                                <h5>80%</h5>
+                                            </div>
+                                            <div class="text-end-2">
+                                                <button class="dropdown-toggle">
+                                                    <i data-feather="more-horizontal"></i>
+                                                </button>
+                                                <span>11,6%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="areachart"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- sales-product -->
+                    <div class="col-7 col-xl-12 order-xl-10">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="header-top">
+                                    <h4>Sales by Product</h4>
+                                    <div class="dropdown icon-dropdown">
+                                        <button class="dropdown-toggle">
+                                            <i data-feather="more-horizontal"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body sales-product">
+                                <div>
+                                    <table class="table display" style="width:100%">
+                                        <thead>
+                                            <tr>
+                                                <th style="text-align: start;">Files Name</th>
+                                                <th>Amount</th>
+                                                <th>% Sold</th>
+                                                <th>ProgressBar</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="d-flex align-item-center">
+                                                        <div class="flex-shrink">
+                                                            <img src="./assets/images/s1.png" alt="">
+                                                        </div>
+                                                        <div class="flex-grow">
+                                                            <a href="javascript:void(0)">
+                                                                <h5>Touch sensor Lamp</h5>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td> $ 7.938</td>
+                                                <td> 52.93%</td>
+                                                <td>
+                                                    <div>
+                                                        <figure>
+                                                            <div class="progress">
+                                                                <div
+                                                                    class="progress-bar progress-bar-success progress-bar-striped active">
+                                                                </div>
+                                                            </div>
+                                                        </figure>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="d-flex align-item-center">
+                                                        <div class="flex-shrink">
+                                                            <img src="./assets/images/s2.png" alt="">
+                                                        </div>
+                                                        <div class="flex-grow">
+                                                            <a href="javascript:void(0)">
+                                                                <h5> Bluetooth headphone</h5>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td> $ 2.937</td>
+                                                <td>12.52%</td>
+                                                <td>
+                                                    <div>
+                                                        <figure>
+                                                            <div class="progress">
+                                                                <div
+                                                                    class="progress-bar progress-bar-info progress-bar-striped active">
+                                                                </div>
+                                                            </div>
+                                                        </figure>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="d-flex align-item-center">
+                                                        <div class="flex-shrink">
+                                                            <img src="./assets/images/s3.png" alt="">
+                                                        </div>
+                                                        <div class="flex-grow">
+                                                            <a href="javascript:void(0)">
+                                                                <h5>Apple watch series 8</h5>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td> $ 1.923</td>
+                                                <td>84.12%</td>
+                                                <td>
+                                                    <div>
+                                                        <figure>
+                                                            <div class="progress">
+                                                                <div
+                                                                    class="progress-bar progress-bar-warning progress-bar-striped active">
+                                                                </div>
+                                                            </div>
+                                                        </figure>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="d-flex align-item-center">
+                                                        <div class="flex-shrink">
+                                                            <img src="./assets/images/s4.png" alt="">
+                                                        </div>
+                                                        <div class="flex-grow">
+                                                            <a href="javascript:void(0)">
+                                                                <h5>Macbook Pro M1
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td> $ 5.538</td>
+                                                <td> 01.41%</td>
+                                                <td>
+                                                    <div>
+                                                        <figure>
+                                                            <div class="progress">
+                                                                <div
+                                                                    class="progress-bar progress-bar-danger progress-bar-striped active">
+                                                                </div>
+                                                            </div>
+                                                        </figure>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- active-members -->
+                    <div class="col-5 order-xl-4 col-xl-7 col-md-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="header-top">
+                                    <h4>Active Members</h4>
+                                    <div class="dropdown icon-dropdown">
+                                        <button class="dropdown-toggle">
+                                            <i data-feather="more-horizontal"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body active-members">
+                                <div>
+                                    <table class="table" style="width: 100%;">
+                                        <thead>
+                                            <tr>
+                                                <th style="text-align: start;">Member Profile</th>
+
+                                                <th style="text-align: center;">Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <div class="d-flex align-item-center">
+                                                        <div class="flex-shrink">
+                                                            <img src="./assets/images/m1.jpg" alt="">
+                                                        </div>
+                                                        <div class="flex-grow">
+                                                            <a href="javascript:void(0)">
+                                                                <h5>Ashley Hart</h5>
+                                                            </a>
+                                                            <span>Website Design</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <p style="text-align: center;" class="member-box">Away</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="d-flex align-item-center">
+                                                        <div class="flex-shrink">
+                                                            <img src="./assets/images/m2.jpg" alt="">
+                                                        </div>
+                                                        <div class="flex-grow">
+                                                            <a href="javascript:void(0)">
+                                                                <h5>Joshua Wood</h5>
+                                                            </a>
+                                                            <span>UI/UX Designer</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <p style="text-align: center;color:#48A3D7;background-color: rgba(72, 163, 215, 0.2); border-color: rgba(72, 163, 215, 0.3);"
+                                                        class="background-light-secondary member-box">Working</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="d-flex align-item-center">
+                                                        <div class="flex-shrink">
+                                                            <img src="./assets/images/m3.jpg" alt="">
+                                                        </div>
+                                                        <div class="flex-grow">
+                                                            <a href="javascript:void(0)">
+                                                                <h5>Anna Iverson</h5>
+                                                            </a>
+                                                            <span>UX Research</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <p style="text-align: center;color:#48A3D7;background-color: rgba(72, 163, 215, 0.2); border-color: rgba(72, 163, 215, 0.3);"
+                                                        class="background-light-secondary  member-box">Working</p>
+                                                </td>
+                                            </tr>
+                                            </tr>
+                                            <td>
+                                                <div class="d-flex align-item-center">
+                                                    <div class="flex-shrink">
+                                                        <img src="./assets/images/m4.jpg" alt="">
+                                                    </div>
+                                                    <div class="flex-grow">
+                                                        <a href="javascript:void(0)">
+                                                            <h5>Ron Dayley</h5>
+                                                        </a>
+                                                        <span>234+ Online</span>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <p style="text-align: center;" class="member-box">Away</p>
+                                            </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer">
+                <div class="row">
+                    <div class="col-12 justify-content-betwn d-flex align-item-center footer-copyright">
+                        <p>Copyright 2024 © Mofi theme by pixelstrap </p>
+                        <p>Hand crafted & made with
+                            <i data-feather="heart"></i>
+                        </p>
+
+                    </div>
+                </div>
+            </footer>
+            <div class="tap-top text-center">
+                <a href="#top">
+                    <i data-feather="chevrons-up"></i>
+                </a>
+
+            </div>
+            <div class="customizer-links">
+                <div class="flex-direction-col">
+                    <a href="javascript:void(0)">
+                        <div class="color">
+                            <img src="./assets/images/color.png" alt="">
+                        </div>
+                    </a>
+                    <a href="javascript:void(0)">
+                        <div class="color">
+                            <img src="./assets/images/support.png" alt="">
+                        </div>
+                    </a>
+                    <a href="javascript:void(0)">
+                        <div class="color">
+                            <img src="./assets/images/setting.png" alt="">
+                        </div>
+                    </a>
+                    <a href="javascript:void(0)">
+                        <div class="color">
+                            <img src="./assets/images/features.png" alt="">
+                        </div>
+                    </a>
+                    <a href="javascript:void(0)">
+                        <div class="color">
+                            <img src="./assets/images/document.png" alt="">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/apexcharts.js"></script>
+    <script src="./assets/js/chart.js"></script>
+    <script src="./assets/js/jquery-3.7.1.js"></script>
+    <script src="./assets/js/jquery-ui.js"></script>
+    <script src="./assets/js/jquery-jvectormap-1.1.1.min.js"></script>
+    <script src="./assets/js/jquery-jvectormap-world-mill.js"></script>
+    <!-- feather icon  -->
+    <script>
+        feather.replace();
+    </script>
+    <!-- sidebar,toggle  -->
+    <script>
+
+        $(".sidebar-dropdown > a").click(function () {
+            $(".sidebar-dropdown-menu").slideUp(200);
+            if ($(this).parent().hasClass("active")) {
+                $(".sidebar-dropdown").removeClass("active");
+                $(this).parent().removeClass("active");
+            } else {
+                $(".sidebar-dropdown").removeClass("active");
+                $(this).next(".sidebar-dropdown-menu").slideDown(200);
+                $(this).parent().addClass("active");
+            }
+        });
+
+        $(".toggle-left > a").click(function () {
+            $(".sidebar").toggleClass("close-icon")
+        })
+        $(".toggle-sidebar").click(function () {
+            $(this).removeClass("sidebar")
+        })
+        $(".toggle-left > a").click(function () {
+            $(".page-header").toggleClass("close-icon")
+        })
+        $(".toggle-left > a").click(function () {
+            $(".page-body").toggleClass("close-icon")
+        })
+    </script>
+    <!-- map  -->
+    <script>
+        var markers = [
+            { latLng: [41.50, -87.37], name: 'Chicago' },
+            { latLng: [32.46, -96.46], name: 'Dallas' },
+            { latLng: [36.10, -115.12], name: 'Las Vegas' },
+            { latLng: [34.3, -118.15], name: 'Los Angeles' },
+            { latLng: [40.43, -74.00], name: 'New York City' },
+            { latLng: [53.412910, -8.243890], name: 'Ireland' },
+            { latLng: [42.697708, 23.321868], name: 'Sofia, Bulgia' },
+            { latLng: [40.014986, -105.270546], name: 'Boulder, CO' }
+        ];
+
+
+        $(function () {
+            $('#map').vectorMap({
+                map: 'world_mill',
+                zoomOnScroll: false,
+                hoverOpacity: 0.7,
+                markerStyle: {
+                    initial: {
+                        fill: '#FFD700',
+                        stroke: '#383f47'
+                    }
+                },
+                markers: markers
+            });
+        });
+
+        function addMapPoint(lat, lon, title) {
+            removeMapPoint();
+            var map = $('#map').vectorMap('get', 'mapObject');
+            map.addMarkers([{ latLng: [lat, lon], name: title }], []);
+        }
+
+        function removeMapPoint() {
+            var map = $('#map').vectorMap('get', 'mapObject');
+            map.removeAllMarkers();
+        }
+
+        function generateRandomLong() {
+            var num = (Math.random() * 180).toFixed(3);
+            var posorneg = Math.floor(Math.random());
+            if (posorneg == 0) {
+                num = num * -1;
+            }
+            return num;
+        }
+
+        function generateRandomLat() {
+            var num = (Math.random() * 90).toFixed(3);
+            var posorneg = Math.floor(Math.random());
+            if (posorneg == 0) {
+                num = num * -1;
+            }
+            return num;
+        }
+
+        window.setInterval(function () {
+            var lon = generateRandomLong();
+            var lat = generateRandomLat();
+
+            addMapPoint(lat, lon, lat + "," + lon);
+        }, 2500);
+    </script>
+    <!-- fullscreen  -->
+    <script>
+        function toggleFullScreen(elem) {
+            if (
+                (document.fullScreenElement !== undefined &&
+                    document.fullScreenElement === null) ||
+                (document.msFullscreenElement !== undefined &&
+                    document.msFullscreenElement === null) ||
+                (document.mozFullScreen !== undefined && !document.mozFullScreen) ||
+                (document.webkitIsFullScreen !== undefined && !document.webkitIsFullScreen)
+            ) {
+                if (elem.requestFullScreen) {
+                    elem.requestFullScreen();
+                } else if (elem.mozRequestFullScreen) {
+                    elem.mozRequestFullScreen();
+                } else if (elem.webkitRequestFullScreen) {
+                    elem.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT);
+                } else if (elem.msRequestFullscreen) {
+                    elem.msRequestFullscreen();
+                }
+            } else {
+                if (document.cancelFullScreen) {
+                    document.cancelFullScreen();
+                } else if (document.mozCancelFullScreen) {
+                    document.mozCancelFullScreen();
+                } else if (document.webkitCancelFullScreen) {
+                    document.webkitCancelFullScreen();
+                } else if (document.msExitFullscreen) {
+                    document.msExitFullscreen();
+                }
+            }
+        }
+
+    </script>
+    <!-- datepicker  -->
+    <script>
+        $(function () {
+            $("#datepicker").datepicker();
+        });
+    </script>
+    <!-- loader  -->
+    <script>
+        $(window).on('load', function () {
+            $(".loader").delay(1000).fadeOut(500);
+            $(".loader-wrapper").delay(1000).fadeOut(500);
+
+            setInterval(function () {
+                $("body").removeClass("loading");
+            }, 2000);
+        });
+    </script>
+</body>
+</html>
